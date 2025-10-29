@@ -9,7 +9,7 @@ export default function EventMe() {
   const [clicks, setClicks] = useState(0);
   const asd: number = [1,2,3,];
   const zxc: number = [4,5,6,];
-  const items = ['Яблоко', 'Банан', 'Апельсин'];
+  const items = ['1-Яблоко', '2-Банан', '3-Апельсин'];
   const handleClick1 = (nnn: string) => {
     console.log(`Im a button! ${nnn}` , nnn);
           // 3. Використовуємо setClicks для зміни стану clicks

@@ -16,16 +16,7 @@ import App2 from './components/App2.tsx'
 import Alert from './components/Alert.tsx'
 import EventMe from "./components/EventMe.tsx";
 
-
-
-
-
-
-
-
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
- 
   
   <React.StrictMode>
     <EventMe />
