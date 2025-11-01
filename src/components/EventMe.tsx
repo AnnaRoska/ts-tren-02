@@ -3,21 +3,18 @@
 /* interface UserMenuProps {
   name: string;
 } */
-let qwert:any;
 import { useState } from "react";
 export default function EventMe() {
   const [clicks, setClicks] = useState(0);
-  const asd: number = [1,2,3,];
-  const zxc: number = [4,5,6,];
-  const items = ['1-Яблоко', '2-Банан', '3-Апельсин'];
+
+  //const items = ['1-Яблоко', '2-Банан', '3-Апельсин'];
   const handleClick1 = (nnn: string) => {
     console.log(`Im a button! ${nnn}` , nnn);
           // 3. Використовуємо setClicks для зміни стану clicks
     setClicks(clicks + 1);
     console.log(clicks);
     console.log(useState);
-     qwert = [...asd, ...zxc];
-    console.log(qwert);
+
   };
   
   const handleClick2 = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -32,7 +29,7 @@ export default function EventMe() {
   return (
     <>
       <div>
-        <button onClick={() => handleClick1("123")}>Click me! Current: {clicks} {qwert}</button>
+        <button onClick={() => handleClick1("123")}>Click me! Current: {clicks} </button>
       </div>
       <div>
         <button onClick={handleClick2}>First button</button>
